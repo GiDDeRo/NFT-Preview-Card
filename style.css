@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit';
+    font-weight: 300;
+}
+main {
+    background-color: hsl(216, 50%, 16%);
+    overflow: hidden;
+    width: 20rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 30px;
+}
+.top-image {
+    position: relative;
+    height: 17rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.top-image > img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.top-image div {
+    position: absolute;
+    top: 0;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.top-image div img {
+    position: absolute;
+}
+.top-image div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+article {
+    margin-top: 1.5rem;
+}
+article h3 {
+    color: white;
+    font-weight: 600;
+}
+.body {
+    margin: 0.5rem 0;
+    line-height: 25px;
+    color: hsl(215, 51%, 70%);
+}
+.price-plan {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 1rem 0 1.5rem 0;
+}
+.price, .limit {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+.price p{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+.limit p {
+    color: hsl(215, 51%, 70%);
+}
+.limit img {
+    width: 20px;
+}
+.author {
+    border-top: 1px solid hsl(215, 51%, 70%);
+    display: flex;
+    padding: 1rem 0;
+    align-items: center;
+}
+.author img {
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.author p {
+    color: hsl(215, 51%, 70%);
+    margin: 0 1rem;
+}
+.author p span a {
+    color: white;
+    font-weight: 400;
+}
+article h3:hover, p span a:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width: 375px) {
+    main {
+        width: 90%;
+    }
+}
